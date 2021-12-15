@@ -1,7 +1,5 @@
 const sql = require('mssql/msnodesqlv8');
-const config = {
-    connectionString: "Driver=SQL Server;Server=DESKTOP-H0EACRB\\SQLEXPRESS;Database=sunpop;Trusted_Connection=true;"
-};
+
 
 sql.connect(config, err => {
     new sql.Request().query('SELECT * from FruityBabes')
